@@ -34,8 +34,6 @@ DEBUG = True
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-9c2rs&_ez_xnb52!u7x0ig=a==wvx%x73r3rm&*h(#o(^_*9zd'
 
-RECRUITER_EMAIL='youremail@gmail.com'
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
