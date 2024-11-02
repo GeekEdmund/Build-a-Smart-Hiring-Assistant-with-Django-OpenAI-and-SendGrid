@@ -13,6 +13,7 @@ from datetime import datetime
 
 # Configure logging
 logger = logging.getLogger(__name__)
+RECRUITER_EMAIL = os.getenv('RECRUITER_MAIL_ADRESS')
 
 def upload_resume(request):
     """Handle resume upload and processing with enhanced evaluation capabilities."""
@@ -110,7 +111,7 @@ def screen_resume(applicant_data, rag_service, sendgrid_service):
             if assessment_result['meets_requirements']:
                 # Enhanced email for successful applicants with detailed assessment
                 email_sent = sendgrid_service.forward_successful_applicant(
-                    settings.RECRUITER_EMAIL,
+                    RECRUITER_EMAIL,
                     applicant_data,
                     format_detailed_assessment(assessment_result['detailed_assessment'])
                 )
