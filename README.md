@@ -39,7 +39,7 @@ Feel free to customize it to meet your specific requirements.
    OPENAI_API_KEY=your_openai_api_key
    SENDGRID_API_KEY=your_sendgrid_api_key
    MAIL_FROM_ADDRESS=your_email@example.com
-   MAIL_FROM_NAME="Your Name"
+   MAIL_FROM_NAME="Your Company Name"
    RECRUITER_EMAIL=your_recruiter_email@example.com
    ```
 
