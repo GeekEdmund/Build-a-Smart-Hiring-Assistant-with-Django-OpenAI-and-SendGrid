@@ -13,7 +13,7 @@ from datetime import datetime
 
 # Configure logging
 logger = logging.getLogger(__name__)
-RECRUITER_EMAIL = os.getenv('RECRUITER_MAIL_ADRESS')
+RECRUITER_EMAIL = os.getenv('RECRUITER_MAIL')
 
 def upload_resume(request):
     """Handle resume upload and processing with enhanced evaluation capabilities."""
